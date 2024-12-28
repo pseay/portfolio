@@ -61,6 +61,51 @@ header nav ul li a:hover {
   color: #007bff;
 }
 
+/* Navigation Styles */
+.nav-toggle {
+  display: none; /* Hidden on desktop */
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .nav-menu {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 20px;
+  }
+
+  .nav-menu.active {
+    display: block;
+    max-height: 500px; /* Adjust based on menu height */
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin-bottom: 10px;
+  }
+
+  .nav-toggle {
+    border: none;
+    background: lightgray;
+    padding: 5px 10px;
+    border-radius: 3px;
+  }
+}
+
 /* Hero Section */
 .hero {
   height: 100vh;

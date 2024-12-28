@@ -14,7 +14,10 @@
   <header>
     <div class="container">
       <h1 class="logo">Preston's Projects</h1>
-      <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-menu">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -113,6 +116,22 @@
             block: 'start'
           });
         }
+      });
+    });
+  </script>
+  <!-- Nav Toggle Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
       });
     });
   </script>
