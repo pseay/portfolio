@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8e7;
+  color: #8B4513;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Bebas Neue', cursive;
+  color: #FFA500;
+}
+
+a {
+  color: #FFA500;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8B4513;
+}
+
+/* Header */
+header {
+  background-color: #FFA500;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #8B4513;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('/project1.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  border-bottom: 5px solid #8B4513;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  background-color: #FFA500;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+  border: 2px solid #8B4513;
+}
+
+.btn:hover {
+  background-color: #8B4513;
+}
+
+.burger-graphic {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: auto;
+  border: 5px solid #8B4513;
+  border-radius: 50%;
+  background-color: #fff8e7;
+  padding: 10px;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #8B4513;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Menu */
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.menu-item h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #8B4513;
+}
+
+.menu-item p {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  background-color: #FFA500;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-top: 5px solid #8B4513;
+}
+
+footer .social-media a {
+  margin: 0 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+footer .social-media a:hover {
+  color: #8B4513;
+}
+
+footer .copyright {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
