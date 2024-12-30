@@ -296,3 +296,56 @@ footer {
 .social-media a:hover {
   color: blue;
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    height: 200px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+
+  .service-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .service-item {
+    width: 80%;
+    overflow: hidden;
+  }
+
+  .gallery-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-item {
+    width: 80%;
+  }
+}
