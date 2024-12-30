@@ -46,7 +46,7 @@ header p {
 
 /* Hero Section */
 .hero {
-  background-image: url('/project1.png');
+  background-image: url('project1.png');
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
